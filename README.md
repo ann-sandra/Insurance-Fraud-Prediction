@@ -7,7 +7,7 @@ This project leverages unsupervised and supervised learning to create a model th
 
 ## Dataset
 ### **File Name**:  
-`credit_Card_applications.csv`  
+`Credit_Card_applications.csv`  
 
 ### **Dataset Structure**:  
 - **Features**:  
@@ -15,9 +15,20 @@ This project leverages unsupervised and supervised learning to create a model th
   - `A1` to `A14`: Attributes describing applicant details  
   - `class`: Target variable  
     - `0`: Credit card not approved  
-    - `1`: Credit card approved  
+    - `1`: Credit card approved
 
-### Dataset Characteristics:
+---
+
+## Libraries Used
+- `pandas`  
+- `numpy`  
+- `matplotlib`
+
+### **Subject Areas**:  
+
+---
+
+## Exploratory Data Analysis(EDA):
 - `A3` and `A7`: Most values lie between 0 to 5.
 - <img src="image/A3.png" alt="A3" width="500"/>
 - <img src="image/A7.png" alt="A7" width="500"/> 
@@ -28,13 +39,6 @@ This project leverages unsupervised and supervised learning to create a model th
 - `A12`: Nominal attribute with values {1, 2, 3}.
 - <img src="image/A12.png" alt="A12" width="500"/> 
 - `A8`: Binary attribute with a positive linear relationship with `class`.  
-
----
-
-## Libraries Used
-- `pandas`  
-- `numpy`  
-- `matplotlib`  
 
 ---
 
