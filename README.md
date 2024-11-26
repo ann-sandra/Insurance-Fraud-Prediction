@@ -125,6 +125,6 @@ This project leverages unsupervised and supervised learning to create a model th
 
 ## Conclusion
 - The SOM effectively identified fraudulent applications by clustering anomalies.  
-- The ANN further refined the fraud detection process, achieving a high accuracy of 99.35%.  
-- Strong correlation between `A8` and `class` emphasizes the importance of this feature in fraud detection.  
+- The ANN further refined the fraud detection process, developing a model achieving a high accuracy of 99.35%.
+- This model can be further trained with transfer learning to be applied to niche areas of fraud identification 
 
