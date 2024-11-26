@@ -19,12 +19,13 @@ This project leverages unsupervised and supervised learning to create a model th
 
 ---
 
-## Libraries Used
+## **Libraries Used**
 - `pandas`  
 - `numpy`  
 - `matplotlib`
 
-### **Subject Areas**:  
+## **Subject Areas**:  
+`Fraud Detection Using SOM`, `Neural Network Classifier`, `Behavioral Analytics ,`, `Anomaly Detection with Unsupervised Learning`
 
 ---
 
