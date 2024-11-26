@@ -1,15 +1,11 @@
 # Behavioral Fraud Analytics
 
 ## Objective
-This project aims to identify fraudulent credit card applications using a combination of unsupervised learning (Self-Organizing Maps - SOM) to detect anomalies and supervised learning (Artificial Neural Networks - ANN) to classify frauds accurately.
+This project leverages unsupervised and supervised learning to create a model that identifies fraudulent applications. The objective is to identify fraudulent credit card applications using a combination of Self-Organizing Maps - SOM to detect anomalies and Artificial Neural Networks - ANN to classify frauds accurately.
 
 ---
 
 ## Dataset
-
-### **Data Source**:  
-Credit card application dataset  
-
 ### **File Name**:  
 `credit_Card_applications.csv`  
 
@@ -106,7 +102,6 @@ Credit card application dataset
 2. **Feature Engineering**: Explore additional features or external datasets for enhanced accuracy.  
 3. **Model Optimization**: Implement advanced architectures like Convolutional or Recurrent Neural Networks for better feature extraction.  
 4. **Explainability**: Add interpretable models to understand the decision-making process.  
-5. **Deployment**: Deploy the model as a web service for scalable fraud detection.
 
 ---
 
