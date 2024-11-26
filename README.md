@@ -101,19 +101,12 @@ Credit card application dataset
 
 ---
 
-## Conclusion
-- The SOM effectively identified fraudulent applications by clustering anomalies.  
-- The ANN further refined the fraud detection process, achieving a high accuracy of 99.35%.  
-- Strong correlation between `A8` and `class` emphasizes the importance of this feature in fraud detection.  
-
----
-
 ## Future Scope
 1. **Dynamic Fraud Detection**: Incorporate real-time detection of fraudulent applications.  
 2. **Feature Engineering**: Explore additional features or external datasets for enhanced accuracy.  
 3. **Model Optimization**: Implement advanced architectures like Convolutional or Recurrent Neural Networks for better feature extraction.  
 4. **Explainability**: Add interpretable models to understand the decision-making process.  
-5. **Deployment**: Deploy the model as a web service for scalable fraud detection.  
+5. **Deployment**: Deploy the model as a web service for scalable fraud detection.
 
 ---
 
@@ -123,3 +116,11 @@ Credit card application dataset
 1. Install the required libraries:
    ```bash
    pip install pandas numpy matplotlib
+
+---
+
+## Conclusion
+- The SOM effectively identified fraudulent applications by clustering anomalies.  
+- The ANN further refined the fraud detection process, achieving a high accuracy of 99.35%.  
+- Strong correlation between `A8` and `class` emphasizes the importance of this feature in fraud detection.  
+
