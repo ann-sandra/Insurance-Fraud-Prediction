@@ -18,10 +18,15 @@ This project leverages unsupervised and supervised learning to create a model th
     - `1`: Credit card approved  
 
 ### Dataset Characteristics:
-- `A3` and `A7`: Most values lie between 0 to 5.  
-- `A2`: Right-skewed and normally distributed with values between 10 and 80.  
-- `A13`: Most values are concentrated at 0, with values ranging up to 1000.  
-- `A12`: Nominal attribute with values {1, 2, 3}.  
+- `A3` and `A7`: Most values lie between 0 to 5.
+- <img src="image/A3.png" alt="A3" width="500"/>
+- <img src="image/A7.png" alt="A7" width="500"/> 
+- `A2`: Right-skewed and normally distributed with values between 10 and 80.
+- <img src="image/A2.png" alt="A7" width="500"/> 
+- `A13`: Most values are concentrated at 0, with values ranging up to 1000.
+- <img src="image/A13.png" alt="A13" width="500"/> 
+- `A12`: Nominal attribute with values {1, 2, 3}.
+- <img src="image/A12.png" alt="A12" width="500"/> 
 - `A8`: Binary attribute with a positive linear relationship with `class`.  
 
 ---
@@ -35,18 +40,21 @@ This project leverages unsupervised and supervised learning to create a model th
 
 ## Exploratory Data Analysis
 1. **Key Observations**:
-   - Strong positive linear relationship between `A8` and `class` — applications with `A8 = 1` tend to get approved.  
-   - `A2` and `A3` show a positive linear relationship.  
+   - Strong positive linear relationship between `A8` and `class` — applications with `A8 = 1` tend to get approved.
+   - <img src="image/A8vsclass.png" alt="A8 VS Class" width="500"/> 
+   - `A2` and `A3` show a positive linear relationship.
+   - <img src="image/a2vsa3.png" alt="A2 VS A3" width="500"/> 
 2. **Outliers**:
    - Outliers were not removed since they are critical for identifying fraudulent patterns.  
 3. **Correlation Analysis**:
-   - Heatmap highlights a strong correlation between `A8` and `class`, making `A8` a key feature in determining approvals.  
+   - Heatmap highlights a strong correlation between `A8` and `class`, making `A8` a key feature in determining approvals.
+   - <img src="image/correlation.png" alt="Correlation" width="500"/> 
 
 ---
 
 ## Data Preprocessing
 1. **Handling Missing Values**:  
-   - Replaced missing values with the mean using `SimpleImputer`.  
+   - Replaced missing values in attributes with the mean using `SimpleImputer`.  
 2. **Feature Scaling**:  
    - Applied `StandardScaler` to scale numerical columns between 0 and 1.  
    - Essential for both SOM and ANN to ensure feature uniformity.  
@@ -64,7 +72,8 @@ This project leverages unsupervised and supervised learning to create a model th
 
 #### Fraud Detection:
 1. **Distance Mapping**:  
-   - Used `som.distance_map()` to calculate the mean Euclidean distance of each node to its neighbors.  
+   - Used `som.distance_map()` to calculate the mean Euclidean distance of each node to its neighbors.
+   - <img src="image/SOM.png" alt="SOM" width="500"/> 
 2. **Best Matching Unit (BMU)**:  
    - Used `som.winner(x)` to identify the closest grid cell for each data point.  
 3. **Fraud Probability Threshold**:  
